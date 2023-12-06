@@ -2,10 +2,10 @@ import { Card, Col, Row } from "react-bootstrap";
 import pizzaData from "../data.js";
 const Products = () => {
   return (
-    <Row xs={1} md={4} className="my-6">
+    <Row xs={1} md={4} className="py-3">
       {pizzaData.map((p, idx) => (
         <Col key={idx}>
-          <Card style={{ opacity: p.soldOut ? 0.4 : 1 }}>
+          <Card style={{ opacity: p.soldOut ? 0.5 : 1 }}>
             <Card.Img variant="top" src={p.photoName} alt={p.name} />
             <Card.Body>
               <Card.Title as="h4">{p.name}</Card.Title>

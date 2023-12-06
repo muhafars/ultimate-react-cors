@@ -9,7 +9,7 @@ const Footer = () => {
   const workHour = hour >= openHour && hour <= closeHour;
   return (
     <footer variant="bottom">
-      <Row className={`${workHour ? "bg-dark text-light" : "bg-danger text-light"}`}>
+      <Row className={`${workHour ? "bg-dark text-light" : "bg-dark text-danger"}`}>
         <Col md={12} className="text-center">
           <h4>{time}</h4>
 
